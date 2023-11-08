@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # My apps
     'learning_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +75,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
+
+# My settings
+LOGIN_URL = 'users:login'
 
 
 # Database
